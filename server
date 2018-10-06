@@ -1,0 +1,67 @@
+{
+  "_comments": [
+    "Valid terminals include: 'Terminal.app' or 'iTerm'",
+    "In the editor value change 'default' to 'nano', 'vi', or another terminal based editor.",
+    "Hosts will also be read from your ~/.ssh/config or /etc/ssh_config file, if available",
+    "For more information on how to configure, please see http://fitztrev.github.io/shuttle/"
+  ],
+  "editor": "default",
+  "launch_at_login": false,
+  "terminal": "iTerm",
+  "iTerm_version": "nightly",
+  "default_theme": "Homebrew",
+  "open_in": "new",  
+  "show_ssh_config_hosts": false,
+  "ssh_config_ignore_hosts": [  ],
+  "ssh_config_ignore_keywords": [  ],
+  "hosts": [
+    {
+      "cmd": "export http_proxy=10.144.1.10:8080",
+      "name": "set proxy"
+    },
+    {
+      "Servers": [
+        {
+          "cmd": "ssh lixchen@10.140.88.15",
+	      "inTerminal": "tab",
+          "name": "local"
+        },
+        {
+          "linsee": [
+            {
+              "cmd": "ssh lixchen@hzlinb35",
+              "inTerminal": "tab",
+              "name": "hzlinb35",
+              "theme": "basic",
+              "title": "hzlinb35"
+            },
+            {
+              "cmd": "ssh lixchen@hzlinb37",
+              "inTerminal": "tab",
+              "name": "hzlinb37",
+              "theme": "basic",
+              "title": "hzlinb37"
+            },
+            {
+              "cmd": "ssh lixchen@wrling42.emea.nsn-net.net",
+              "inTerminal": "tab",
+              "name": "wrling42",
+              "theme": "basic",
+              "title": "wrling42"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Vagrant": [
+        {
+          "cmd": "ssh vagrant@127.0.0.1 -p 2222 -i ~/.vagrant.d/insecure_private_key",
+          "name": "Vagrant"
+        }
+      ]
+    }
+  ]
+}
+
+        
