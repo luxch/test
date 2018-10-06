@@ -1,0 +1,21 @@
+"*":
+  "atom-shell-commands": {}
+  core:
+    disabledPackages: [
+      "linter-cpplint"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "atom-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    invisibles: {}
+    preferredLineLength: 100
+    showInvisibles: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "c1411ff3-a39d-4d10-9315-61a01c57d2fa"
+  welcome:
+    showOnStartup: false
